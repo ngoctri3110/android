@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bai1</string>
+    <string name="message_dialog_exit_title">Thong bao</string>
+    <string name="message_dialog_exit">Ban muon thoat</string>
+    <string name="message_dialog_ok">Co</string>
+    <string name="message_dialog_cancel">Khong</string>
+    <string name="message_dialog_login_title">Thong bao dang nhap</string>
+    <string name="message_dialog_login_yes">Chào mừng bạn đăng nhập hệ thống, thông tin của bạn đã được lưu</string>
+    <string name="message_dialog_login_no">Chào mừng bạn đăng nhập hệ thống, thông tin của bạn đã khong được lưu</string>
+</resources>

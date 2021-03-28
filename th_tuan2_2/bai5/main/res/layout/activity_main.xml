@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:text="Quản lý nhân viên"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã NV:"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/edittext_manv"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Vui lòng nhập thông tin"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Nv:"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/edittext_tennv"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Vui lòng nhập thông tin"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại NV:"
+            android:layout_marginTop="8dp"
+            android:textSize="25dp"/>
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_chinhthuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chính thức"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"/>
+            <RadioButton
+                android:id="@+id/radio_thoivu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời vụ"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_nhap"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:text="Nhập NV"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="130dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/holo_green_dark"/>
+
+    <ListView
+        android:id="@+id/lvNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</LinearLayout>

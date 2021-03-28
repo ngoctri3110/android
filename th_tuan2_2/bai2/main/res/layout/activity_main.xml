@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dang Nhap He Thong"
+        android:textAlignment="center"
+        android:textSize="28dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Tai Khoan: "
+            android:textSize="18dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/edtTaiKhoan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Khong duoc de trong"
+            android:layout_weight="10"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Mat khau: "
+            android:textSize="18dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/edtTaiKhoan2"
+            android:hint="Khong duoc de trong"
+            android:inputType="textWebPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"/>
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/ckbLuuThongTin"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Luu thong tin"
+        android:textSize="18dp"/>
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Dang Nhap"
+        android:textSize="18dp"
+        android:layout_gravity="right"/>
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Thoat"
+        android:textSize="18dp"
+        android:layout_gravity="right"/>
+</LinearLayout>

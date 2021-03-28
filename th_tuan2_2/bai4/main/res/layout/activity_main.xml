@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập tên: "
+            android:textSize="25dp"
+            android:background="#BDB76B"/>
+        <EditText
+            android:id="@+id/edittext_ten"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_nhap"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textAllCaps="false"
+        android:text="Nhập"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/textview_hien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="posotion: 0, value = null"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
